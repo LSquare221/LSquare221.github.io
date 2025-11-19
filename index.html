@@ -1,248 +1,267 @@
  <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <title>LSquare – I romanzi di Luigi Lazzaro</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Homepage LSquare: i romanzi di Luigi Lazzaro, Adelchi È e Il paese senza finestre.">
- <!-- Canonical & Social Preview -->
-  <link rel="canonical" href="https://lsquare221.github.io/">
+  <meta charset="UTF-8" />
+  <title>LSquare Edizioni – Luigi Lazzaro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="I libri di Luigi Lazzaro pubblicati con il marchio LSquare Edizioni: Adelchi È, Il Paese senza Finestre, La Vinaia, Il Cattivo Gemello e altri romanzi." />
 
-  <!-- Open Graph (Facebook/WhatsApp/LinkedIn) -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://lsquare221.github.io/">
-  <meta property="og:title" content="LSquare Edizioni – I romanzi di Luigi Lazzaro">
-  <meta property="og:description" content="Catalogo LSquare: Adelchi È e Il paese senza finestre.">
-  <meta property="og:image" content="https://lsquare221.github.io/lsquare-og.jpg?v=1">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="LSquare Edizioni – I romanzi di Luigi Lazzaro">
-  <meta name="twitter:description" content="Catalogo LSquare: Adelchi È e Il paese senza finestre.">
-  
-<meta name="twitter:image" content="https://lsquare221.github.io/lsquare-og.jpg?v=1"> 
   <style>
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: #f5f5f5;
-      color: #111;
+      color: #222;
     }
-    a {
-      color: inherit;
-    }
-
-    /* HEADER */
 
     header {
-  background: #111;
-  color: #fff;
-  padding: 10px 20px;
-}
-    .header-inner {
-      max-width: 980px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-    }
-    .logo-block {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .logo-block img {
-      width: 40px;
-      height: 40px;
-      border-radius: 8px;
-      object-fit: cover;
-    }
-    .site-title {
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin: 0;
-    }
-    .site-subtitle {
-      font-size: 0.85rem;
-      margin: 2px 0 0;
-      opacity: 0.8;
-    }
-
-    /* CONTENUTO */
-
-    .page {
-      max-width: 980px;
-      margin: 30px auto 40px;
-      padding: 0 20px 20px;
-    }
-    .books {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-    .book-card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-      padding: 16px;
-      max-width: 280px;
+      background: #111;
+      color: #f5f5f5;
+      padding: 1.5rem 1rem;
       text-align: center;
     }
-    .book-card img {
-      max-width: 180px;
-      height: auto;
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      letter-spacing: 0.04em;
+    }
+
+    header p {
+      margin: 0.4rem 0 0;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem 3rem;
+    }
+
+    .intro {
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 0.98rem;
+      line-height: 1.5;
+    }
+
+    h2.section-title {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 1.4rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .book-card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 1rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .book-cover {
+      width: 100%;
+      aspect-ratio: 2/3;
+      object-fit: cover;
       border-radius: 10px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+      margin-bottom: 0.8rem;
+      background: #ddd;
     }
-    .book-card h2 {
+
+    .book-title {
       font-size: 1.1rem;
-      margin: 0.8rem 0 0.3rem;
+      margin: 0.3rem 0;
+      font-weight: 600;
     }
-    .book-card p {
+
+    .book-tagline {
       font-size: 0.9rem;
-      margin: 0.1rem 0 0.8rem;
-      color: #555;
+      color: #666;
+      margin: 0 0 0.6rem;
     }
+
+    .book-meta {
+      font-size: 0.8rem;
+      color: #777;
+      margin-bottom: 0.6rem;
+    }
+
+    .book-desc {
+      font-size: 0.9rem;
+      line-height: 1.45;
+      flex: 1;
+      margin-bottom: 0.9rem;
+    }
+
     .book-buttons {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      gap: 8px;
-      margin-top: 0.4rem;
+      gap: 0.5rem;
     }
-    .book-card a.btn {
+
+    .btn {
       display: inline-block;
-      text-decoration: none;
-      padding: 8px 14px;
+      padding: 0.45rem 0.9rem;
       border-radius: 999px;
-      font-size: 0.9rem;
-      border: 1px solid #111;
-      white-space: nowrap;
-    }
-    .book-card a.primary {
-      background: #111;
-      color: #fff;
-    }
-    .book-card a.secondary {
+      font-size: 0.85rem;
+      text-decoration: none;
+      border: 1px solid #222;
       background: #fff;
-      color: #111;
+      color: #222;
+      transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease, color 0.1s ease;
     }
 
-    /* FOOTER */
+    .btn-primary {
+      background: #111;
+      color: #f5f5f5;
+    }
 
-     footer {
-  border-top: 1px solid #ddd;
-  background: #fafafa;
-  margin-top: 30px;
-  padding: 14px 20px 18px;
-  font-size: 0.85rem;
-  color: #555;
-}
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    }
 
-.footer-inner {
-  max-width: 980px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 10px;
-  align-items: center;
-}
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.8rem;
+      color: #777;
+      border-top: 1px solid #e0e0e0;
+      background: #fafafa;
+    }
 
-.footer-left,
-.footer-right {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
-}
+    footer a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-.footer-right a {
-  text-decoration: none;
-  color: #333;
-}
-
-.footer-right a:hover {
-  text-decoration: underline;
-}
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
+
 <body>
   <header>
-    <div class="header-inner">
-      <a href="https://lsquare221.github.io/" class="logo-block">
-        <!-- LOGO:
-             carica nel repo LSquare221.github.io un file, per esempio "logo-lsquare.png",
-             e sostituisci qui sotto src="logo-lsquare.png" -->
-        <img src="logo-lsquare.ping.png" alt="Logo LSquare">
-        <div>
-          <p class="site-title">LSquare Edizioni</p>
-          <p class="site-subtitle">I romanzi di Luigi Lazzaro</p>
-        </div>
-      </a>
-    </div>
+    <h1>LSquare Edizioni – Luigi Lazzaro</h1>
+    <p>Romanzi e racconti pubblicati in modo indipendente, tra noir, thriller psicologico e narrativa contemporanea.</p>
   </header>
 
-  <div class="page">
-    <div class="books">
+  <main>
+    <section class="intro">
+      <p>
+        Questa pagina raccoglie i miei libri disponibili su Amazon, IngramSpark e nelle principali librerie online.
+        Il pulsante <strong>“Scopri di più”</strong> su Facebook porta qui: da qui puoi scegliere il titolo che ti interessa.
+      </p>
+    </section>
 
-      <!-- Scheda Adelchi È -->
-      <div class="book-card">
-        <img src="https://lsquare221.github.io/Adelchi-/AdelchiE_ebook-cover_2560x1600_RGB.jpg"
-             alt="Copertina di Adelchi È">
-        <h2>Adelchi È</h2>
-        <p>Romanzo vincitore di 7 premi letterari.</p>
+    <h2 class="section-title">I miei libri</h2>
+
+    <section class="books-grid">
+
+      <!-- ADELCHI È -->
+      <article class="book-card">
+        <img src="images/adelchi-cover.jpg" alt="Copertina Adelchi È" class="book-cover" />
+        <h3 class="book-title">Adelchi È</h3>
+        <p class="book-tagline">Thriller psicologico / romanzo di formazione.</p>
+        <p class="book-meta">Premiato in numerosi concorsi letterari.</p>
+        <p class="book-desc">
+          Un ragazzino apparentemente fragile, una coscienza tormentata, una colpa che affonda le radici nel passato.
+          Sullo sfondo, un paese di provincia e un mistero che cresce insieme al protagonista.
+        </p>
         <div class="book-buttons">
-          <a class="btn primary"
-             href="https://www.amazon.it/dp/B0FTX65941"
-             target="_blank" rel="noopener noreferrer">
-            Compra su Amazon
+          <a href="https://www.amazon.it/dp/ASIN_ADELCHI" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            Acquista su Amazon
           </a>
-          <a class="btn secondary"
-             href="https://lsquare221.github.io/Adelchi-/"
-             target="_blank" rel="noopener noreferrer">
-            Scheda libro
+          <a href="#" class="btn" target="_blank" rel="noopener noreferrer">
+            Scheda completa
           </a>
         </div>
-      </div>
+      </article>
 
-      <!-- Scheda Il paese senza finestre -->
-      <div class="book-card">
-        <img src="https://lsquare221.github.io/IlPaeseSenzaFinestre/EBOOK_cover.jpg"
-             alt="Copertina de Il paese senza finestre">
-        <h2>Il paese senza finestre</h2>
-        <p>Un thriller d'autore ambientato a Faramonte.</p>
+      <!-- IL PAESE SENZA FINESTRE -->
+      <article class="book-card">
+        <img src="images/paese-senza-finestre-cover.jpg" alt="Copertina Il Paese senza Finestre" class="book-cover" />
+        <h3 class="book-title">Il Paese senza Finestre</h3>
+        <p class="book-tagline">Romanzo contemporaneo tra realismo e allegoria.</p>
+        <p class="book-meta">Nuova edizione LSquare Edizioni.</p>
+        <p class="book-desc">
+          Un paese in cui le case non hanno più finestre e nessuno vuole davvero vedere cosa succede fuori.
+          Una storia sul conformismo, la paura e il prezzo da pagare per riconquistare uno sguardo libero.
+        </p>
         <div class="book-buttons">
-          <a class="btn primary"
-             href="https://www.amazon.it/dp/B0FYYKT5M7"
-             target="_blank" rel="noopener noreferrer">
-            Compra su Amazon
+          <a href="https://www.amazon.it/dp/ASIN_PAESE" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            Acquista su Amazon
           </a>
-          <a class="btn secondary"
-             href="https://lsquare221.github.io/IlPaeseSenzaFinestre/"
-             target="_blank" rel="noopener noreferrer">
-            Scheda libro
+          <a href="#" class="btn" target="_blank" rel="noopener noreferrer">
+            Scheda completa
           </a>
         </div>
-      </div>
+      </article>
 
-    </div>
-  </div>
+      <!-- LA VINAIA -->
+      <article class="book-card">
+        <img src="images/la-vinaia-cover.jpg" alt="Copertina La Vinaia" class="book-cover" />
+        <h3 class="book-title">La Vinaia</h3>
+        <p class="book-tagline">Noir storico ambientato negli anni ’50.</p>
+        <p class="book-meta">Nuova edizione autore, già pubblicato con Leone Editore.</p>
+        <p class="book-desc">
+          Un omicidio in un paese dell’Appennino abruzzese, una bottiglieria, una nevicata,
+          un “colpevole perfetto” troppo comodo per tutti. E un maresciallo che preferirebbe chiudere un occhio.
+        </p>
+        <div class="book-buttons">
+          <a href="https://www.amazon.it/dp/ASIN_VINAIA" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            Acquista su Amazon
+          </a>
+          <a href="#" class="btn" target="_blank" rel="noopener noreferrer">
+            Scheda completa
+          </a>
+        </div>
+      </article>
 
-   <footer>
-  <div class="footer-inner">
-    <div class="footer-left">
-      <span>© 2025 LSquare Edizioni · Luigi Lazzaro</span>
-    </div>
-    <div class="footer-right">
-      <span>📧 <a href="mailto:l.lazzaro@live.it">l.lazzaro@live.it</a></span>
-       span>📷 <a href="https://www.instagram.com/lsquare_edizioni" target="_blank" rel="noopener noreferrer">@lsquare_edizioni</a></span>
-      <span>📄 LSquare Edizioni – dati in aggiornamento</span>
-    </div>
-  </div>
-</footer>
+      <!-- IL CATTIVO GEMELLO -->
+      <article class="book-card">
+        <img src="images/il-cattivo-gemello-cover.jpg" alt="Copertina Il Cattivo Gemello" class="book-cover" />
+        <h3 class="book-title">Il Cattivo Gemello</h3>
+        <p class="book-tagline">Thriller psicologico sui giochi di identità.</p>
+        <p class="book-meta">Vincitore e finalista in vari premi per inediti.</p>
+        <p class="book-desc">
+          Due gemelli, un unico corpo di reato, una verità che nessuno vuole davvero sentire.
+          Tra neurodivergenza, senso di colpa e manipolazione, il romanzo mette in crisi l’idea stessa di “io”.
+        </p>
+        <div class="book-buttons">
+          <a href="https://www.amazon.it/dp/ASIN_CATTIVO" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            Acquista su Amazon
+          </a>
+          <a href="#" class="btn" target="_blank" rel="noopener noreferrer">
+            Scheda completa
+          </a>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> LSquare Edizioni – Luigi Lazzaro.
+    Tutti i diritti riservati. ·
+    <a href="mailto:tuoindirizzo@email.it">Contatti</a>
+  </footer>
+
+  <script>
+    // anno automatico nel footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
