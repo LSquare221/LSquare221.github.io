@@ -75,16 +75,16 @@
   flex-grow: 1;              /* <- aggiungi: spinge i bottoni in basso */
 } 
 
-     .book-cover {
-  width: 100%;
-  height: auto;           /* niente altezza fissa → niente tagli */
-  max-height: 480px;      /* stessa altezza massima per tutti */
-  object-fit: contain;    /* mostra sempre l’intera copertina */
-  background-color: #f4f4f4;
-  border-radius: 16px;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
-  margin-bottom: 1rem;
-}
+      <style>
+    .book-cover {
+      width: 100%;
+      height: auto;
+      max-height: none !important;
+      object-fit: contain !important;
+    }
+  </style>
+</head>
+
 
     .book-title {
       font-size: 1.1rem;
