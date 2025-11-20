@@ -75,14 +75,14 @@
   flex-grow: 1;              /* <- aggiungi: spinge i bottoni in basso */
 } 
 
-    .book-cover {
-      width: 100%;
-      aspect-ratio: 2/3;
-      object-fit: cover;
-      border-radius: 10px;
-      margin-bottom: 0.8rem;
-      background: #ddd;
-    }
+     .book-cover {
+  width: 100%;
+  height: 360px;          /* altezza uguale per tutte le copertine */
+  object-fit: cover;      /* riempie il riquadro tagliando un po’ se serve */
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  margin-bottom: 1rem;
+}
 
     .book-title {
       font-size: 1.1rem;
