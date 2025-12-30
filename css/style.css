@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: #f6f4ef;
+  color: #222;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.cover {
+  max-width: 360px;
+  width: 100%;
+  margin: 0 auto 30px;
+  display: block;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 0.4em;
+}
+
+.author {
+  font-style: italic;
+  margin-bottom: 1.5em;
+}
+
+.synopsis {
+  line-height: 1.6;
+  font-size: 1.05em;
+}
+
+.footer {
+  margin-top: 50px;
+  font-size: 0.85em;
+  color: #666;
+}
