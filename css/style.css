@@ -135,6 +135,20 @@ body.book .container p{
   font-size: 1.02em;
   line-height: 1.65;
 }
+/* ====== FORCE: BOTTONI ACQUISTO TUTTI NERI (OVERRIDE) ====== */
+body.book .buy-buttons a.buy-btn{
+  background: #111 !important;
+  color: #fff !important;
+  border: 1px solid #111 !important;
+  padding: 14px 28px !important;
+  border-radius: 999px !important;
+  text-decoration: none !important;
+}
+
+body.book .buy-buttons a.buy-btn:hover{
+  background: #000 !important;
+  border-color: #000 !important;
+}
 
 .buy-btn:hover{
   background: #222;
