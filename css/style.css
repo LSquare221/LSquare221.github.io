@@ -164,6 +164,19 @@ body.book .buy-buttons a{
   text-decoration: none !important;
   font-size: 1em !important;
 }
+/* ====== OVERRIDE TOTALE BOTTONI ACQUISTO (TUTTI, ANCHE IL SECONDO) ====== */
+body.book .buy-buttons a.buy-btn,
+body.book .buy-buttons a.buy-btn:not(:first-child),
+body.book .buy-buttons a.buy-btn + a.buy-btn{
+  background: #111 !important;
+  color: #fff !important;
+  border: 1px solid #111 !important;
+}
+
+body.book .buy-buttons a.buy-btn:hover{
+  background: #000 !important;
+  border-color: #000 !important;
+}
 
 body.book .buy-buttons a:hover{
   background: #000 !important;
