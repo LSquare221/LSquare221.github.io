@@ -23,4 +23,35 @@ body{
 }
 
 .btn:hover{opacity:.9;}
+
 .btn:visited{color:#fff;}
+/* === Book page layout === */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.cover {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 900px) {
+  .container {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+  }
+
+  .cover {
+    flex-shrink: 0;
+  }
+
+  .book-content {
+    max-width: 600px;
+  }
+}
