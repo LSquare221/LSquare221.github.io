@@ -11,4 +11,9 @@
   font-size: 18px;
   line-height: 1.7;
 }
+/* FORCE SINOSSI SIZE – override finale */
+.book-content .sinossi{
+  font-size: 19px;
+  line-height: 1.7;
+}
  
