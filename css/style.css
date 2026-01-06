@@ -182,3 +182,37 @@ body.book .buy-buttons a:hover{
   background: #000 !important;
   border-color: #000 !important;
 }
+/* Catalogo: layout stabile (no colonne fantasma) */
+.catalog-item{
+  display:flex;
+  align-items:flex-start;
+  gap: 28px;
+  margin: 28px 0;
+}
+
+.catalog-cover{
+  width: 190px;
+  height: auto;
+  display:block;
+}
+
+.catalog-text{
+  flex:1;
+  min-width: 0;
+  column-count: 1 !important;
+  column-gap: normal !important;
+}
+
+.catalog-text h4{
+  margin: 12px 0 8px;
+}
+
+.buy-buttons{
+  display:flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.catalog-item a{
+  break-inside: avoid;
+}
