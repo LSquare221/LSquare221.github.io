@@ -19,4 +19,35 @@
 .book .buy-buttons .buy-btn {
   display: inline-block !important;
 }
- 
+ .buy-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.buy-btn.paper {
+  background: #222;
+  color: #fff;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+
+.buy-btn.paper:hover {
+  background: #444;
+}
+
+.buy-btn.disabled {
+  background: #bbb;
+  color: #666;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.fallback {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 10px;
+}
