@@ -1,0 +1,28 @@
+/* ===== Pagina autore (solo qui) ===== */
+.container.autore-page{
+  font-size: 22px;
+  line-height: 1.75;
+  max-width: 980px;
+}
+
+.container.autore-page p{
+  max-width: 780px;
+}
+
+.container.autore-page h1{
+  font-size: 3em;
+  margin-bottom: 0.25em;
+}
+
+.container.autore-page h2{
+  font-size: 1.6em;
+  margin-top: 1.3em;
+}
+
+.container.autore-page .author-photo{
+  display: block;
+  width: min(380px, 100%);
+  height: auto;
+  margin: 18px auto 24px;
+  border-radius: 6px;
+}
