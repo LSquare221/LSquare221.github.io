@@ -226,3 +226,13 @@ body.book .buy-buttons a:hover{
   margin: 20px auto 30px auto;
   border-radius: 4px;
 }
+
+/* Pagina autore */
+.autore-page {
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.autore-page p {
+  max-width: 720px;
+}
