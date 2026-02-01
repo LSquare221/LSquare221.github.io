@@ -1,14 +1,15 @@
 /* ===== Pagina autore (solo qui) ===== */
 .container.autore-page{
-  font-size: 22px;
-  line-height: 1.75;
+  font-size: 22px !important;
+  line-height: 1.75 !important;
   max-width: 980px;
 }
 
 .container.autore-page p{
+  font-size: 1.1em !important;
+  line-height: 1.75 !important;
   max-width: 780px;
-}
-
+} 
 .container.autore-page h1{
   font-size: 3em;
   margin-bottom: 0.25em;
