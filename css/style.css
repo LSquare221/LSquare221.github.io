@@ -239,7 +239,7 @@ body.book .buy-buttons a:hover{
 
 /* ====== OVERRIDE SOLO PAGINA AUTORE (font più grande) ====== */
 .container.autore-page{
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.75;
 }
 
