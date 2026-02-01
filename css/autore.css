@@ -27,3 +27,21 @@
   margin: 18px auto 24px;
   border-radius: 6px;
 }
+
+/* ===== Micro-ottimizzazione mobile ===== */
+@media (max-width: 640px){
+
+  .container.autore-page{
+    font-size: 20px;
+    line-height: 1.7;
+  }
+
+  .container.autore-page .author-photo{
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .container.autore-page h1{
+    font-size: 2.4em;
+  }
+}
