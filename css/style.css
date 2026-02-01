@@ -216,3 +216,13 @@ body.book .buy-buttons a:hover{
 .catalog-item a{
   break-inside: avoid;
 }
+
+/* Pagina autore */
+.author-photo {
+  display: block;
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  margin: 20px auto 30px auto;
+  border-radius: 4px;
+}
