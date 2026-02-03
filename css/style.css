@@ -249,3 +249,18 @@ body.book .buy-buttons a:hover{
   line-height: inherit;
   max-width: 760px;
 }
+
+/* ====== Bottone Scheda Autore (catalogo) ====== */
+.catalog-autore-btn .buy-btn,
+.container > p .buy-btn[href="/autore/"] {
+  background-color: #c9a24d;   /* oro */
+  color: #111;
+  border: 1px solid #b8923f;
+}
+
+.catalog-autore-btn .buy-btn:hover,
+.container > p .buy-btn[href="/autore/"]:hover {
+  background-color: #a8842f;   /* oro scuro */
+  color: #fff;
+  border-color: #a8842f;
+}
