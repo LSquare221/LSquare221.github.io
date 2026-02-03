@@ -264,3 +264,16 @@ body.book .buy-buttons a:hover{
   color: #fff;
   border-color: #a8842f;
 }
+
+/* ===== Bottone Scheda Autore (oro, stabile) ===== */
+a.buy-btn.author-btn{
+  background-color: #c9a24d !important;
+  color: #111 !important;
+  border: 1px solid #b8923f !important;
+}
+
+a.buy-btn.author-btn:hover{
+  background-color: #a8842f !important;
+  color: #fff !important;
+  border-color: #a8842f !important;
+}
