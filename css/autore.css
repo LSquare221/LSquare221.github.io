@@ -45,3 +45,29 @@
     font-size: 2.4em;
   }
 }
+
+/* Evita che iOS/Facebook ingrandisca i font “a sorpresa” */
+html{
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* MOBILE: riduci tutto SOLO nella pagina autore */
+@media (max-width: 700px){
+  .container.autore-page{
+    font-size: 18px;      /* invece di 24px */
+    line-height: 1.65;
+  }
+
+  .container.autore-page h1{
+    font-size: 2.2em;     /* invece di 3em */
+  }
+
+  .container.autore-page h2{
+    font-size: 1.35em;
+  }
+
+  .container.autore-page .author-photo{
+    width: min(260px, 90vw);
+  }
+}
